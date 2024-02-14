@@ -5,13 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Software Engineering Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for terminal-like interface */
+        #terminal {
+            background-color: black;
+            color: white;
+            font-family: monospace;
+            padding: 10px;
+            margin-bottom: 20px;
+            overflow-y: auto;
+            height: 200px; /* Adjust as needed */
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>John Doe</h1>
         <p>Software Engineer</p>
     </header>
-    
+
+    <!-- Terminal-like interface -->
+    <div id="terminal"></div>
+
     <section id="about">
         <h2>About Me</h2>
         <p>I am a passionate software engineer with a strong background in web development. I enjoy building scalable and efficient applications that solve real-world problems.</p>
@@ -55,5 +71,27 @@
     <footer>
         <p>&copy; 2024 John Doe</p>
     </footer>
+
+    <!-- JavaScript for terminal-like interface -->
+    <script>
+        // Function to emulate a terminal-like interface
+        function typeTerminal(text, speed) {
+            const terminal = document.getElementById("terminal");
+            let i = 0;
+            const typeWriter = () => {
+                if (i < text.length) {
+                    terminal.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+            typeWriter();
+        }
+
+        // Display greeting message in the terminal-like interface
+        window.onload = function() {
+            typeTerminal("Welcome to John Doe's Portfolio\nType 'help' for available commands\n", 50);
+        };
+    </script>
 </body>
 </html>
