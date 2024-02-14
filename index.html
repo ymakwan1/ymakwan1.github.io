@@ -3,95 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Software Engineering Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Yash's Portfolio</title>
     <style>
-        /* Additional CSS for terminal-like interface */
-        #terminal {
-            background-color: black;
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://via.placeholder.com/1920x1080'); /* Placeholder image from Placeholder.com */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: white;
-            font-family: monospace;
-            padding: 10px;
-            margin-bottom: 20px;
-            overflow-y: auto;
-            height: 200px; /* Adjust as needed */
-            border-radius: 5px;
+            font-size: 24px;
+            animation: fade-in 2s forwards;
+            opacity: 0;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>John Doe</h1>
-        <p>Software Engineer</p>
-    </header>
-
-    <!-- Terminal-like interface -->
-    <div id="terminal"></div>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate software engineer with a strong background in web development. I enjoy building scalable and efficient applications that solve real-world problems.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1: Example Project</h3>
-            <p>Description: This is a description of my first project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>GitHub: <a href="#">Link</a></p>
-        </div>
-        <div class="project">
-            <h3>Project 2: Another Project</h3>
-            <p>Description: This is a description of my second project. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>GitHub: <a href="#">Link</a></p>
-        </div>
-        <!-- Add more projects here -->
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>SQL</li>
-            <li>Git</li>
-            <!-- Add more skills here -->
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: john.doe@example.com</p>
-        <p>LinkedIn: <a href="#">Profile</a></p>
-        <p>GitHub: <a href="#">Profile</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 John Doe</p>
-    </footer>
-
-    <!-- JavaScript for terminal-like interface -->
-    <script>
-        // Function to emulate a terminal-like interface
-        function typeTerminal(text, speed) {
-            const terminal = document.getElementById("terminal");
-            let i = 0;
-            const typeWriter = () => {
-                if (i < text.length) {
-                    terminal.innerHTML += text.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, speed);
-                }
-            }
-            typeWriter();
-        }
-
-        // Display greeting message in the terminal-like interface
-        window.onload = function() {
-            typeTerminal("Welcome to John Doe's Portfolio\nType 'help' for available commands\n", 50);
-        };
-    </script>
+    <div>
+        <p>Hi, I am Yash, nice to meet you!</p>
+    </div>
 </body>
 </html>
