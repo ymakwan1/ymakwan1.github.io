@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 messageElement.style.opacity = "0";
                 // Navigate to the About Me page after fadeout
                 setTimeout(function() {
-                    window.location.href = "about.html";
+                    window.location.href = "/about";
                 }, 1000); // Adjust timing as needed
             }, 2000); // Adjust timing as needed
         }
