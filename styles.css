@@ -1,8 +1,9 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f0f0;
+    overflow-x: hidden;
 }
 
 .container {
@@ -11,9 +12,15 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #191818;
     color: #fff;
     padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
@@ -42,15 +49,16 @@ section {
 }
 
 h2 {
-    font-size: 32px;
+    color: #11c73b;
+    font-size: 72px; /* Large font size */
+    text-align: center;
+    margin-bottom: 20px; /* Add some spacing below */
+    font-family: 'Consolas', 'Lucida Console', monospace;
 }
 
-.project {
-    margin-bottom: 20px;
+p {
+    color: #11c73b;
+    font-size: 24px; /* Large font size */
+    text-align: center;
+    font-family: 'Courier', monospace;
 }
-
-.project h3 {
-    margin-top: 0;
-}
-
-/* Add more styles as needed */
