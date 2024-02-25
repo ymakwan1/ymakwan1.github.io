@@ -3,37 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash's Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            background-image: url('https://via.placeholder.com/1920x1080'); /* Placeholder image from Placeholder.com */
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 24px;
-            animation: fade-in 2s forwards;
-            opacity: 0;
-        }
-
-        @keyframes fade-in {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-    </style>
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <p>Hi, I am Yash, nice to meet you!</p>
-    </div>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>This is where you can introduce yourself.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Name 1</h3>
+                <p>Description of Project 1</p>
+            </div>
+            <div class="project">
+                <h3>Project Name 2</h3>
+                <p>Description of Project 2</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>You can reach me at: your.email@example.com</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
