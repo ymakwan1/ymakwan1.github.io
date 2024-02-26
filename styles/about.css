@@ -8,19 +8,19 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 1px; /* Adjust top margin as needed */
-    margin-left: -90px; /* Adjust left margin as needed */
+    margin-top: 1px; 
+    margin-left: -90px; 
 }
-
+ 
 .card-image img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* to create a circular shape */
+    border-radius: 50%; 
     object-fit: cover;
     margin-bottom: 10px;
 }
 .card-content {
-    flex: 1; /* Fill remaining space */
+    flex: 1; 
     padding: 10px;
 }
 
@@ -39,7 +39,49 @@
 
 .card-content i {
     color: #11c73b;
-    font-size: 15px; /* Large font size */
+    font-size: 15px; 
+    text-align: center;
+    font-family: 'Courier', monospace;
+}
+
+/* Styles for the new card */
+.new-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 850px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -350px; 
+    margin-left: auto; 
+    margin-right: 20; 
+}
+
+
+
+.new-card-content {
+    text-align: center;
+}
+
+.new-card-content h2 {
+    color: #11c73b;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.new-card-content p {
+    margin-bottom: 0;
+    color: #11c73b;
+    font-size: 16px;
+    font-family: 'Courier', monospace;
+}
+
+.new-card-content i {
+    color: #11c73b;
+    font-size: 16px;
     text-align: center;
     font-family: 'Courier', monospace;
 }

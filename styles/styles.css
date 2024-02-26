@@ -6,8 +6,6 @@ body {
     overflow-x: hidden;
 }
 
-/* transition.css */
-
 body {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -61,21 +59,19 @@ section {
 
 h2 {
     color: #11c73b;
-    font-size: 72px; /* Large font size */
+    font-size: 72px; 
     text-align: center;
-    margin-bottom: 20px; /* Add some spacing below */
+    margin-bottom: 20px; 
     font-family: 'Consolas', 'Lucida Console', monospace;
 }
 
 p {
     color: #11c73b;
-    font-size: 24px; /* Large font size */
+    font-size: 24px; 
     text-align: center;
     font-family: 'Courier', monospace;
 }
 
-
-/* styles.css */
 footer {
     position: fixed;
     bottom: 0;

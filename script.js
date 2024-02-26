@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
     function typeMessage() {
         if (messageIndex < message.length) {
             if (message.charAt(messageIndex) === '\n') {
-                messageElement.innerHTML += '<br>'; // Add line break
+                messageElement.innerHTML += '<br>'; 
             } else {
                 messageElement.innerHTML += message.charAt(messageIndex);
             }
             messageIndex++;
-            setTimeout(typeMessage, 100); // Adjust typing speed here (in milliseconds)
+            setTimeout(typeMessage, 100); 
         } else {
             // Fade out the elements after the typewriter effect is complete
             setTimeout(function() {
@@ -37,10 +37,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 messageElement.style.opacity = "0";
                 // Navigate to the About Me page after fadeout
                 setTimeout(function() {
-                    // window.location.href = "https://ymakwan1.github.io/about/";
                     window.location.href = "about/";
-                }, 1000); // Adjust timing as needed
-            }, 2000); // Adjust timing as needed
+                }, 1000); 
+            }, 2000); 
         }
     }
 
