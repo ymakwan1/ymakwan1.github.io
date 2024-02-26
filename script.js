@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Typewriter effect script for p tag
     const messageElement = document.getElementById('welcome-message');
-    const message = "yash@127.0.0.1:~/$: cat welcome.txt \n yash@127.0.0.1:~/$: I am Yash, Nice to meet you!";
+    //const message = "yash@127.0.0.1:~/$: cat welcome.txt \n yash@127.0.0.1:~/$: I am Yash, Nice to meet you!";
+    const message = "Delighted to see you. \n I am Yash, Nice to meet you!"
     let messageIndex = 0;
 
     function typeMessage() {
