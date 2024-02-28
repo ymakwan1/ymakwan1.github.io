@@ -79,20 +79,19 @@ footer {
     width: 100%;
     background-color : #191818;
     color: #fff;
-    padding: 5px 0;
+    padding: 0px 0;
     text-align: center;
 }
 
-
 .social-icons {
     list-style-type: none;
-    padding: 0;
+    padding: 20;
     color: #11c73b;
 }
 
 .social-icons li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
     color: #11c73b;
 }
 
@@ -104,11 +103,10 @@ footer {
     width: 30px;
     height: 30px;
     vertical-align: middle;
-    
 }
 
 .social-icons a {
     color: #11c73b; /* Green color */
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
 }
