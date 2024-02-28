@@ -55,7 +55,7 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: -350px; 
+    margin-top: -360px; 
     margin-left: auto; 
     margin-right: 20; 
 }
@@ -64,6 +64,7 @@
 
 .new-card-content {
     text-align: center;
+    padding: 20px;
 }
 
 .new-card-content h2 {
@@ -77,6 +78,7 @@
     color: #11c73b;
     font-size: 16px;
     font-family: 'Courier', monospace;
+    text-align: justify;
 }
 
 .new-card-content i {
@@ -85,3 +87,4 @@
     text-align: center;
     font-family: 'Courier', monospace;
 }
+
