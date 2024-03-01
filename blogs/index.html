@@ -1,45 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Makwana - Blogs</title>
-    <link rel="stylesheet" href="/styles/about.css">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-50%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .slide-in {
+            animation: slideInFromTop 1s ease-out;
+        }
+
+        .text-large {
+            font-size: 2rem;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1>Yash Makwana</h1>
-                <nav>
-                    <ul>
-                        <li><a href="../">Home</a></li>
-                        <li><a href="/about/">About</a></li>
-                        <li><a href="/projects/">Projects</a></li>
-                        <li><a href="/blogs/">Blog</a></li>
-                        <li><a href="/shelf/">Shelf</a></li>
-                    </ul>
-                </nav>
-            </div>
+
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 py-4 w-full">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Yash Makwana</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="../" class="text-white hover:text-gray-400 transition-colors duration-500">Home</a></li>
+                    <li><a href="/about/" class="text-white hover:text-gray-400 transition-colors duration-500">About</a></li>
+                    <li><a href="/projects/" class="text-white hover:text-gray-400 transition-colors duration-500">Projects</a></li>
+                    <li><a href="/blogs/" class="text-white hover:text-gray-400 transition-colors duration-500">Blog</a></li>
+                    <li><a href="/shelf/" class="text-white hover:text-gray-400 transition-colors duration-500">Shelf</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
+    <div class="container mx-auto my-8 flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <a href="https://github.com/ymakwan1/job-application-tracker" class="text-white hover:text-gray-400">
+                    <h3 class="text-lg font-semibold mb-4">Job Application Tracker</h3>
+                    <p class="mb-4">A job application tracker web application using React.js and Flask, enabling users to manage and monitor their job search journey efficiently</p>
+                    <ul class="flex flex-wrap">
+                        <li class="mr-2 mb-2 bg-blue-600 py-1 px-2 rounded-full">React</li>
+                        <li class="mr-2 mb-2 bg-blue-600 py-1 px-2 rounded-full">Flask</li>
+                        <li class="mr-2 mb-2 bg-blue-600 py-1 px-2 rounded-full">Docker</li>
+                        <li class="mr-2 mb-2 bg-blue-600 py-1 px-2 rounded-full">Postgres</li>
+                    </ul>
+                </a>
+            </div>
+            <!-- Add more cards here -->
+        </div>
+    </div>
 
-    <footer>
-        <div class="container">
-            <ul class="social-icons">
-                <li><a href="https://www.linkedin.com/in/yashmak98/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                <li><a href="https://github.com/ymakwan1" target="_blank"><i class="bi bi-github"></i></a></li>
-                <li><a href="mailto:yash.makwana9802@gmail.com"><i class="bi bi-envelope"></i></a></li>
-                <li><a href="Yash_Makwana_Resume.pdf" download><i class="bi bi-file-earmark"></i></a></li>
+    <footer class="bg-gray-800 py-4 fixed bottom-0 w-full">
+        <div class="container mx-auto">
+            <ul class="flex justify-center">
+                <li class="mr-4"><a href="https://www.linkedin.com/in/yashmak98/" target="_blank" class="text-white hover:text-gray-400"><i class="bi bi-linkedin"></i></a></li>
+                <li class="mr-4"><a href="https://github.com/ymakwan1" target="_blank" class="text-white hover:text-gray-400"><i class="bi bi-github"></i></a></li>
+                <li class="mr-4"><a href="mailto:yash.makwana9802@gmail.com" class="text-white hover:text-gray-400"><i class="bi bi-envelope"></i></a></li>
+                <li><a href="Yash_Makwana_Resume.pdf" download class="text-white hover:text-gray-400"><i class="bi bi-file-earmark"></i></a></li>
             </ul>
         </div>
     </footer>
-    
 
-    <script src="scripts.js"></script>
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>

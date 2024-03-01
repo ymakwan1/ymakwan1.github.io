@@ -1,85 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Makwana - About Me</title>
-    <link rel="stylesheet" href="/styles/about.css">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-50%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .slide-in {
+            animation: slideInFromTop 1s ease-out;
+        }
+
+        .text-large {
+            font-size: 2rem;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1>Yash Makwana</h1>
-                <nav>
-                    <ul>
-                        <li><a href="../">Home</a></li>
-                        <li><a href="/about/">About</a></li>
-                        <li><a href="/projects/">Projects</a></li>
-                        <li><a href="/blogs/">Blog</a></li>
-                        <li><a href="/shelf/">Shelf</a></li>
-                    </ul>
-                </nav>
-            </div>
+
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 py-4 w-full">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Yash Makwana</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="../" class="text-white hover:text-gray-400 transition-colors duration-500">Home</a></li>
+                    <li><a href="/about/" class="text-white hover:text-gray-400 transition-colors duration-500">About</a></li>
+                    <li><a href="/projects/" class="text-white hover:text-gray-400 transition-colors duration-500">Projects</a></li>
+                    <li><a href="/blogs/" class="text-white hover:text-gray-400 transition-colors duration-500">Blog</a></li>
+                    <li><a href="/shelf/" class="text-white hover:text-gray-400 transition-colors duration-500">Shelf</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <div class="card">
-                <div class="card-image">
-                    <img src="/images/profile.jpg" alt="Profile Picture">
+    <section id="about" class="py-10">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="max-w-lg mx-auto mb-8 md:mb-0">
+                <div class="max-w-md mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+                    <div class="card-image">
+                        <img src="/images/profile.jpg" alt="Profile Picture" class="w-full">
+                    </div>
+                    <div class="card-content px-6 py-4 text-gray-900">
+                        <h2 class="text-2xl font-bold mb-2">Yash Makwana</h2>
+                        <p class="text-lg font-semibold">CS Grad @ SUNY Binghamton</p>
+                        <p class="text-gray-500 flex items-center"><i class="bi bi-geo-alt-fill mr-1"></i> Binghamton, New York</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h2>Yash Makwana</h2>
-                    <p>CS Grad @ SUNY Binghamton</p>
-                    <p class="bi bi-geo-alt-fill"> Binghamton, New York</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="max-w-3xl bg-gray-800 shadow-md rounded-lg overflow-hidden my-4 p-6 text-justify slide-in">
+                    <p class="text-lg mb-6">Hello there, I'm Yash! (pronounced Y-uh-sh)</p>
+                    <p class="text-lg mb-6">A passionate and results-driven software engineer with ~2 years experience in the industry and currently pursuing Master's in Computer Science from State University of New York at Binghamton (Go Bearcats!).</p>
+                    <p class="text-lg mb-6">Through failure and iterations over the years, I have honed my skills in various programming languages, including Java, Python, and C. I am also experienced in web development and have worked with frameworks like Django and Flask.</p>
+                    <p class="text-lg mb-6">I am a team player, through and through and always look to ease out the load collectively, in my previous organization I have collaborated across different spectrums of teams involved in the project seamlessly.</p>
+                    <p class="text-lg">When the iterations get heavy, you can find me relaxing (geeking) out on Cricket and analyzing the game from a player's perspective, having played for my school. Also, vibing to different spectrums of songs.</p>
+                    <p class="text-lg mt-6">Please feel free to connect at yash{{dot}}makwana9802@gmail{{dot}}com.</p>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Centered container for the new card -->
-    <div class="container">
-        <div class="new-card">
-            <div class="new-card-content">
-                <p style="text-align: center;">Hello there, I'm Yash! (pronounced Y-uh-sh) </p>
-                <p>
-                    <br>
-                    A passionate and results-driven software engineer with ~2 years experience in the industry 
-                    and currently pursuing Master's in Computer Science from State University of New York at Binghamton (Go Bearcats!)
-                    <br><br>
-                    "You just begin. You do the math. You solve one problem... and you solve the next one... and then the next. And If you solve enough problems, you get to come home."
-                    <br><br>
-                    Problem solving in computer science via code is much like the above quote, besides you don't get to go home, with ever changing field you keep always in iteration, 
-                    and this the creative process I enjoy.
-                    <br><br>
-                    Through failure and iterations over the years, I have honed my skills in various programming languages, including Java, Python and C. 
-                    I am also experienced in web development and have worked with frameworks like Django and Flask.
-                    <br><br>
-                    I am a team player, through and through and always look to ease out the load collectively, in my previous organization 
-                    I have collabarated across different specturms of teams involved in the project seamlessly.
-                    <br><br>
-                    When the iterations get heavy, you can find me relaxing (geeking) out on Cricket and analzying the game from a player perspective, having played for my school. Also, vibing to different spectrum of songs.
-                </p>
-                <p style="text-align: center;">Please feel free to connect at yash{{dot}}makwana9802{{at}}gmail{{dot}}com.</p>
-            </div>
-        </div>
-    </div>
 
-    <footer>
-        <div class="container">
-            <ul class="social-icons">
-                <li><a href="https://www.linkedin.com/in/yashmak98/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                <li><a href="https://github.com/ymakwan1" target="_blank"><i class="bi bi-github"></i></a></li>
-                <li><a href="mailto:yash.makwana9802@gmail.com"><i class="bi bi-envelope"></i></a></li>
-                <li><a href="Yash_Makwana_Resume.pdf" download><i class="bi bi-file-earmark"></i></a></li>
+    <footer class="bg-gray-800 py-4 fixed bottom-0 w-full">
+        <div class="container mx-auto">
+            <ul class="flex justify-center">
+                <li class="mr-4"><a href="https://www.linkedin.com/in/yashmak98/" target="_blank" class="text-white hover:text-gray-400"><i class="bi bi-linkedin"></i></a></li>
+                <li class="mr-4"><a href="https://github.com/ymakwan1" target="_blank" class="text-white hover:text-gray-400"><i class="bi bi-github"></i></a></li>
+                <li class="mr-4"><a href="mailto:yash.makwana9802@gmail.com" class="text-white hover:text-gray-400"><i class="bi bi-envelope"></i></a></li>
+                <li><a href="Yash_Makwana_Resume.pdf" download class="text-white hover:text-gray-400"><i class="bi bi-file-earmark"></i></a></li>
             </ul>
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>

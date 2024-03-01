@@ -1,87 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Makwana - Projects</title>
-    <link rel="stylesheet" href="/styles/projects.css">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1>Yash Makwana</h1>
-                <nav>
-                    <ul>
-                        <li><a href="../">Home</a></li>
-                        <li><a href="/about/">About</a></li>
-                        <li><a href="/projects/">Projects</a></li>
-                        <li><a href="/blogs/">Blog</a></li>
-                        <li><a href="/shelf/">Shelf</a></li>
-                    </ul>
-                </nav>
-            </div>
+
+<body class="bg-gray-900 text-white font-sans flex flex-col min-h-screen">
+    <header class="bg-gray-800 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Yash Makwana</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="../" class="text-white hover:text-gray-400">Home</a></li>
+                    <li><a href="/about/" class="text-white hover:text-gray-400">About</a></li>
+                    <li><a href="/projects/" class="text-white hover:text-gray-400">Projects</a></li>
+                    <li><a href="/blogs/" class="text-white hover:text-gray-400">Blog</a></li>
+                    <li><a href="/shelf/" class="text-white hover:text-gray-400">Shelf</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    
-    <div class="row">
-        <div class="card">
-            <a href="https://github.com/ymakwan1/job-application-tracker">
-                <h3>Job Application Tracker</h3>
-                <p>
-                    A job application tracker web application using React.js and Flask, enabling users to manage and monitor
-                    their job search journey efficiently
-                </p>
-                <ul>
-                    <i class="bi bi-tag">React</i>
-                    <i class="bi bi-tag">Flask</i>
-                    <i class=" bi bi-tag">Docker</i>
-                    <i class=" bi bi-tag">Postgres</i>
-                </ul>
-            </a>
+
+    <div class="container mx-auto my-8 flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <!-- <a href="https://github.com/ymakwan1/job-application-tracker" class="text-white hover:text-gray-400"> -->
+                <a href="job-application-tracker/" class="text-white hover:text-gray-400">
+                    <h3 class="text-lg font-semibold mb-4">Job Application Tracker</h3>
+                    <p class="mb-4">A job application tracker web application using React.js and Flask, enabling users to manage and monitor their job search journey efficiently</p>
+                    <ul class="flex flex-wrap">
+                        <li class="mr-2 mb-2 bg-blue-600 py-1 px-2 rounded-full">React</li>
+                        <li class="mr-2 mb-2 bg-blue-600 py-1 px-2 rounded-full">Flask</li>
+                        <li class="mr-2 mb-2 bg-blue-600 py-1 px-2 rounded-full">Docker</li>
+                        <li class="mr-2 mb-2 bg-blue-600 py-1 px-2 rounded-full">Postgres</li>
+                    </ul>
+                </a>
+            </div>
+            <!-- Add more cards here -->
         </div>
-        <!-- <div class="card">
-            <a href="card1.html">
-                <h3>Card 1</h3>
-                <p>This is the content of card 1.</p>
-                <ul>
-                    <i class="bi bi-tag">React</i>
-                </ul>
-            </a>
-        </div> -->
-        <!-- <div class="card">
-            <a href="card1.html">
-                <h3>Card 1</h3>
-                <p>This is the content of card 1.</p>
-                <ul>
-                    <i class="bi bi-tag">React</i>
-                </ul>
-            </a>
-        </div>
-        <div class="card">
-            <a href="card1.html">
-                <h3>Card 1</h3>
-                <p>This is the content of card 1.</p>
-                <ul>
-                    <i class="bi bi-tag">React</i>
-                </ul>
-            </a>
-        </div> -->
     </div>
-    <footer>
-        <div class="container">
-            <ul class="social-icons">
-                <li><a href="https://www.linkedin.com/in/yashmak98/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-                <li><a href="https://github.com/ymakwan1" target="_blank"><i class="bi bi-github"></i></a></li>
-                <li><a href="mailto:yash.makwana9802@gmail.com"><i class="bi bi-envelope"></i></a></li>
-                <li><a href="Yash_Makwana_Resume.pdf" download><i class="bi bi-file-earmark"></i></a></li>
+
+    <footer class="bg-gray-800 py-4 mt-auto">
+        <div class="container mx-auto">
+            <ul class="flex justify-center">
+                <li class="mr-4"><a href="https://www.linkedin.com/in/yashmak98/" target="_blank" class="text-white hover:text-gray-400"><i class="bi bi-linkedin"></i></a></li>
+                <li class="mr-4"><a href="https://github.com/ymakwan1" target="_blank" class="text-white hover:text-gray-400"><i class="bi bi-github"></i></a></li>
+                <li class="mr-4"><a href="mailto:yash.makwana9802@gmail.com" class="text-white hover:text-gray-400"><i class="bi bi-envelope"></i></a></li>
+                <li><a href="Yash_Makwana_Resume.pdf" download class="text-white hover:text-gray-400"><i class="bi bi-file-earmark"></i></a></li>
             </ul>
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
 </body>
+
 </html>
