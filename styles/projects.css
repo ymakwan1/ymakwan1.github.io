@@ -1,0 +1,47 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(50% - 22px);
+    box-sizing: border-box;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: #11c73b;
+    text-align: center;
+}
+
+.card p {
+    font-size: medium;
+    text-align: justify;
+}
+.card  i {
+    color: #11c73b;
+    
+}
+
+.card ul {
+    padding: 0;
+}
+
+.card ul i {
+    margin-right: 5px; 
+}
