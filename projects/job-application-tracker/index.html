@@ -29,31 +29,25 @@
     <h1 class="text-3xl font-bold text-center">
         Job Application Tracker
         <a href="https://github.com/ymakwan1/job-application-tracker" target="_blank" class="text-white hover:text-gray-400"><i class="bi bi-github text-lg"></i></a>
+        <ul class="flex justify-center">
+            <li class="mr-2 text-base"><i class="bi bi-tag text-lg">Web Development</i></li>
+            <li class="mr-2"><i class="bi bi-tag text-lg">Databases</i></li>
+            <li class="mr-2"><i class="bi bi-tag text-lg">Containerization</i></li>
+        </ul>
     </h1>
-
+    <p class="text-center text-lg mt-4">A simple project to track job applications</p>
     <footer class="bg-gray-800 py-4 mt-auto">
         <div class="container mx-auto">
             <ul class="flex justify-center">
                 <li class="mr-4"><a href="https://www.linkedin.com/in/yashmak98/" target="_blank" class="text-white hover:text-gray-400"><i class="bi bi-linkedin"></i></a></li>
                 <li class="mr-4"><a href="https://github.com/ymakwan1" target="_blank" class="text-white hover:text-gray-400"><i class="bi bi-github"></i></a></li>
                 <li class="mr-4"><a href="mailto:yash.makwana9802@gmail.com" class="text-white hover:text-gray-400"><i class="bi bi-envelope"></i></a></li>
-                <li><a href="Yash_Makwana_Resume.pdf" download class="text-white hover:text-gray-400"><i class="bi bi-file-earmark"></i></a></li>
+                <li><a href="/static/resume/Yash_Makwana_Resume.pdf" download class="text-white hover:text-gray-400"><i class="bi bi-file-earmark"></i></a></li>
             </ul>
         </div>
     </footer>
 
-    <script>
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="/static/js/smooth_scrolling.js"></script>
 
 </body>
 
