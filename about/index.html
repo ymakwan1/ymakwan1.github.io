@@ -57,18 +57,27 @@
 
     <section id="about" class="py-10">
         <div class="container mx-auto flex flex-col md:flex-row items-center">
-            <div class="max-w-lg mx-auto mb-8 md:mb-0">
-                <div class="max-w-md mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="max-w-md mx-auto mb-8 md:mb-0 slide-in">
+                <!-- Card -->
+                <div class="max-w-xs mx-auto bg-white shadow-md rounded-lg overflow-hidden">
                     <div class="card-image">
                         <img src="/static/images/profile.jpg" alt="Profile Picture" class="w-full">
                     </div>
                     <div class="card-content px-6 py-4 text-gray-900">
-                        <h2 class="text-2xl font-bold mb-2">Yash Makwana</h2>
-                        <p class="text-lg font-semibold">CS Grad @ SUNY Binghamton</p>
-                        <p class="text-gray-500 flex items-center"><i class="bi bi-geo-alt-fill mr-1"></i> Binghamton, New York</p>
+                        <h2 class="text-xl font-bold mb-2">Yash Makwana</h2>
+                        <p class="text-base font-semibold">CS Grad @ SUNY Binghamton</p>
+                        <p class="text-gray-500 flex items-center text-sm"><i class="bi bi-geo-alt-fill mr-1"></i> Binghamton, New York</p>
                     </div>
                 </div>
+            
+                <!-- Hyperlinks -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden my-4 p-6 text-justify slide-in flex mt-4">
+                    <a href="" class="text-white hover:text-gray-500 mr-4">Experience</a>
+                    <a href="#" class="text-white hover:text-gray-500">Spotify</a>
+                </div>
             </div>
+            
+            
             <div class="max-w-3xl mx-auto">
                 <div class="max-w-3xl bg-gray-800 shadow-md rounded-lg overflow-hidden my-4 p-6 text-justify slide-in">
                     <p class="text-lg mb-6">Hello there, I'm Yash! (pronounced Y-uh-sh)</p>
@@ -81,6 +90,7 @@
             </div>
         </div>
     </section>
+
 
     <footer class="bg-gray-800 py-4 fixed bottom-0 w-full">
         <div class="container mx-auto">

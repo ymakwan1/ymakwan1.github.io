@@ -1,90 +1,28 @@
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 250px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 1px; 
-    margin-left: -90px; 
-}
- 
-.card-image img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; 
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-.card-content {
-    flex: 1; 
-    padding: 10px;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-.card-content h2 {
-    color: #11c73b;
-    font-size: 15px;
-    margin-top: 0;
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
-.card-content p {
-    margin-bottom: 0;
-    color: #11c73b;
-    font-size: 15px;
-    font-family: 'Courier', monospace;
+.slide-in {
+    animation: slideInFromTop 1s ease-out;
 }
 
-.card-content i {
-    color: #11c73b;
-    font-size: 15px; 
-    text-align: center;
-    font-family: 'Courier', monospace;
+.text-large {
+    font-size: 2rem;
 }
-
-/* Styles for the new card */
-.new-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 875px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: -362px; 
-    margin-left: auto; 
-    margin-right: 10; 
-}
-
-
-
-.new-card-content {
-    text-align: center;
-    padding: 10px;
-}
-
-.new-card-content h2 {
-    color: #11c73b;
-    font-size: 18px;
-    margin-top: 0;
-}
-
-.new-card-content p {
-    margin-bottom: 0;
-    color: #11c73b;
-    font-size: 16px;
-    font-family: 'Courier', monospace;
-    text-align: justify;
-}
-
-.new-card-content i {
-    color: #11c73b;
-    font-size: 16px;
-    text-align: center;
-    font-family: 'Courier', monospace;
-}
-
